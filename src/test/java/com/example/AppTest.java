@@ -85,6 +85,6 @@ class AppTest {
 
         String salida = App.calcularImc(peso, altura);
 
-        assertEquals("Resultado del IMC = Obesidad mórbida", salida);
+        assertEquals("PELIGRO! IMC fuera de rango... Por favor, acuda a su médico", salida);
     }
 }
