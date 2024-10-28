@@ -2,9 +2,9 @@ package com.example;
 
 public final class App {
 
-    public static String calcularIMC(Float peso, Integer altura) {
+    public static String calcularImc(Double peso, Integer altura) {
         Float alturaMetros = altura / 100.0f;
-        Float resultado = peso / (alturaMetros * alturaMetros);
+        Double resultado = peso / (alturaMetros * alturaMetros);
 
         if (resultado < 16) {
             return "Resultado del IMC = Delgadez severa";
